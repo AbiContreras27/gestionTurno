@@ -1,0 +1,53 @@
+/* reset.css */
+
+/* Elimina márgenes, paddings y bordes por defecto */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  /* Elimina el estilo por defecto de listas */
+  ul, ol {
+	list-style: none;
+  }
+  
+  /* Establece la fuente y el tamaño base */
+  body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+  }
+  
+  /* Elimina decoraciones por defecto de enlaces */
+  a {
+	text-decoration: none;
+	color: inherit;
+  }
+  
+  /* Elimina bordes por defecto en imágenes y bloques embebidos */
+  img, embed, object, video {
+	max-width: 100%;
+	height: auto;
+  }
+  
+  /* Elimina el estilo por defecto de tablas */
+  table {
+	border-collapse: collapse;
+	border-spacing: 0;
+  }
+  
+  /* Restablece el estilo por defecto de elementos de formulario */
+  input, button, textarea, select {
+	font: inherit;
+  }
+  
+  /* Elimina el estilo por defecto de blockquote */
+  blockquote, q {
+	quotes: none;
+  }
+  
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+	content: '';
+  }

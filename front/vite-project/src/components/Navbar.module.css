@@ -1,0 +1,22 @@
+.navbar {
+    background-color: #af5700;
+    width: 100%;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: thin solid #ffe8cd;
+}
+
+a {
+    font-size: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 5px;
+    margin: 10px;
+}
+
+a:hover {
+    background-color: #ffe8cd;
+    border-radius: 10px;
+    transition: 0.5s;
+}

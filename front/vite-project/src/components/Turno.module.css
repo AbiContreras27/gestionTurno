@@ -1,0 +1,16 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    justify-content: center;
+    border: 1px solid #af5700;
+    border-radius: 15px ;
+    padding: 15px;
+    background-color: blanchedalmond;
+}
+
+h3 {
+    text-decoration: underline;
+}
