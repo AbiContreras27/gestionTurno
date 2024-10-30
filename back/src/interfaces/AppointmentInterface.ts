@@ -6,7 +6,7 @@ export interface Appointment {
     status: Status
 }
 
-enum Status {
+export enum Status {
     active = "active",
     cancelled = "cancelled"
 }

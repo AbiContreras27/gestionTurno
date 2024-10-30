@@ -9,9 +9,8 @@ function App() {
   return (
     <>
       <Navbar/>
-      
-       <MisTurnos/>
        
+     <MisTurnos/>
     </>
       // <Home/>
       

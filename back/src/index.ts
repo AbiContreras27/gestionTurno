@@ -10,7 +10,3 @@ AppDataSource.initialize()
     console.log(`Server listening on port ${PORT}`)
   })
 })
-
-// server.listen(3000, () => {
-//   console.log(`Server listening on port ${PORT}`);
-// });
