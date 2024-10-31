@@ -24,7 +24,7 @@ function Navbar(){
     return (
         <div className={styles.container}>
                 <div className={styles.logo}>
-                    <img src="ruta/a/tu/logo.png" alt="Logo" />
+                    <img src="https://enfermeriatv.es/wp-content/uploads/2021/10/saludmental.jpg" alt="Logo" />
                 </div>
                 <div className={styles.navbar}>
                     <nav>
