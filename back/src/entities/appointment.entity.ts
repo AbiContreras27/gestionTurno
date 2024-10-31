@@ -1,4 +1,4 @@
-import { CreateDateColumn, UpdateDateColumn, Column, Entity, JoinColumn, ManyToOne, PrimaryGeneratedColumn } from "typeorm"
+import { CreateDateColumn, UpdateDateColumn, Column, Entity, ManyToOne, PrimaryGeneratedColumn } from "typeorm"
 import { User } from "./User.entity"
 import { Status } from "../interfaces/AppointmentInterface"
 
@@ -17,7 +17,6 @@ export class Appointment {
     status: Status
 
     @ManyToOne( () => User, user => user.appointments, {nullable: false})
-    @JoinColumn()
     user: User
 
     @CreateDateColumn()

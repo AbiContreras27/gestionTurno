@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  width: 100%;
+  height: 5em; 
+  padding: 0 20px; 
+}
+
+.logo img {
+  height: 4em; 
+
+}
+
+.navbar {
+  background-color: #af5700;
+  width: auto;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  border-bottom: thin solid #ffe8cd;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.navItem {
+  font-size: 1.2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 0.5em 1em;
+  margin: 0 1em;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navLink:hover {
+  background-color: #ffe8cd;
+  color: #af5700;
+}

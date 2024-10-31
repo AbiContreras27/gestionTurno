@@ -12,7 +12,7 @@ Lugar de Proyecto: Consultorio de Psicología
     - Criterios de aceptación:
 
         1. El usuario debe poder registrarse en un formulario.
-        2. El usuario debe registrar en el formulario nombres, apellidos, DNI, género, fecha de nacimiento, correo electrónico, teléfono, ciudad, direccion de residencia, contraseña, confirmar contraseña.
+        2. El usuario debe registrar en el formulario nombres, DNI, fecha de nacimiento, correo electrónico, nombre de usuario y contraseña
         3. El usuario debe de tener todos los campos diligenciados con información.
         4. El usuario debe de dar click en bóton de registrar o cancelar registro.
 
