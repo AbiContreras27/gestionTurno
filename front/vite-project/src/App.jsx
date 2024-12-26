@@ -30,6 +30,7 @@ function App() {
         !user ? (
           <main className={Style.main}>
             <Navbar />
+            <h1>Consultorio de Psicología</h1>
             <Routes>
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />

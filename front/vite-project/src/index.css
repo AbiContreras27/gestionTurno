@@ -1,9 +1,6 @@
 body {
   margin: 0;
-  background-color: #ffd19b;
-  background: linear-gradient(
-    to left,
-    #ffd19b 0%,
-    #c7945a 100%
-  );
+background-image: url("./img/fondo.jpg");
+background-size:cover;
+  background-repeat: no-repeat;
 }
