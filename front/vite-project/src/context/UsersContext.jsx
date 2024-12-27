@@ -18,13 +18,13 @@ export const UsersProvider = ({ children }) => {
     const [userAppointments, setUserAppointments] = useState([]);
 
     const loginUser = async (userData) => {
-        const respuesta = await axios.post('http://localhost:3000/users/login', userData);
+        const respuesta = await axios.post('https://gestionturno-production.up.railway.app:3000/users/login', userData);
         localStorage.setItem("userId", respuesta.data.user.id);
         setUser(respuesta.data.user.id);
     };
 
     const registerUser = async (userData) => {
-        await axios.post("http://localhost:3000/users/register", userData);
+        await axios.post("https://gestionturno-production.up.railway.app:3000/users/register", userData);
     };
 
     const logOutUser = () => {
@@ -35,7 +35,7 @@ export const UsersProvider = ({ children }) => {
 
     const getUserAppointments = async (userId) => {
         try {
-        const response = await axios.get(`http://localhost:3000/users/${userId}`);
+        const response = await axios.get(`https://gestionturno-production.up.railway.app:3000/users/${userId}`);
         console.log(response.data.appointments)
             setUserAppointments(response.data.appointments); 
 
@@ -46,7 +46,7 @@ export const UsersProvider = ({ children }) => {
     };
 
     const cancelAppointment = async (appointmentId) => {
-        await axios.put(`http://localhost:3000/appointments/cancel/${appointmentId}`);
+        await axios.put(`https://gestionturno-production.up.railway.app:3000/appointments/cancel/${appointmentId}`);
         const userAppointmentsUpdate = userAppointments.map((appointment) => {
             if (appointment.id === appointmentId) {
                 return { ...appointment, status: "cancelled" };
@@ -58,7 +58,7 @@ export const UsersProvider = ({ children }) => {
 
     const createdAppointment = async (values) => {
         const appointmentValues = { ...values, userId: user };
-        await axios.post(`http://localhost:3000/appointments/schedule`, appointmentValues);
+        await axios.post(`https://gestionturno-production.up.railway.app:3000/appointments/schedule`, appointmentValues);
     };
 
     const value = {

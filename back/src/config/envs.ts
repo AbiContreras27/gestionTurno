@@ -1,10 +1,11 @@
 import "dotenv/config";
 
-export const PORT: number = process.env.PORT ? parseInt(process.env.PORT, 10): 3000;
+export const PORT: number = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
 
 function getDatabaseConfig() {
     return {
         DB_TYPE: process.env.DB_TYPE,
+        DATABASE_URL: process.env.DATABASE_URL,
         DB_HOST: process.env.DB_HOST,
         DB_PORT: process.env.DB_PORT ? parseInt(process.env.DB_PORT, 10) : 5432,
         DB_USERNAME: process.env.DB_USERNAME,
